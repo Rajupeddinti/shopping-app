@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    font-family:"Roboto Condensed", sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: rgb(71, 147, 150);
+    padding: 0 3rem;
+}
+.product-image{
+    width: 80%;
+    height: 50%;
+    margin: 0 10%;
+}
+.products{
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    width: 100%;
+    gap:  2rem;
+    padding: 1rem;
+}
+.product{
+    border: 1px solid black;
+    height: 55vh;
+    padding: 1rem;
+    border-radius: 7px;
+}
+img{
+    height: 3rem;
+}
+.product .fa-solid{
+    height: 2rem;
+    width: 5rem;
+    display: inline;
+    background-color:rgb(71, 147, 150) ;
+    border: none;
+    font-weight: bolder;
+    border-radius: 7px;
+    position: relative;
+}
+.image{
+    width: 20px;
+}
+.image sup{
+    position: absolute;
+    padding:0 5px;
+    background-color: white;
+    border-radius: 50%;
+    top: 3%;
+}
+.price-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    font-weight: bolder;
+}
+.main{
+    display: flex;
+    display: grid;
+    grid-template-columns: 75% auto;
+}
+.cart{
+    width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border: 1px solid black;
+   padding: 1rem;
+   border-radius: 7px;
+   margin-bottom: 0.5rem;
+}
+.cartitems{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+}
+.cartitems p{
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+@media screen and (max-width:700px){
+    .product{
+        width: 100%;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+}
